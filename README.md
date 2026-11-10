@@ -314,3 +314,8 @@ Aero Linux is 100% free and open-source software (FOSS). Your sponsorship direct
 ## 📜 License
 
 Distributed under the **MIT License**. Created by [Ronit Gupta](https://github.com/ronitgupta138) and Contributors.
+## Latest Updates
+
+- Sub-350MB idle RAM achievement verified
+- Dynamic zRAM (ZSTD) performance tuned
+- 45 GTK3 apps running lean
