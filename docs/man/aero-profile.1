@@ -1,0 +1,26 @@
+." Manual page for aero-profile
+.TH AERO-PROFILE 1 "November 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
+.SH NAME
+aero-profile \- Hardware energy governor and dynamic frequency coordinator
+.SH SYNOPSIS
+.B aero-profile
+[BsetR IProfileR] [B\-\-statusR] [B\-\-helpR]
+.SH DESCRIPTION
+.B aero-profile
+manages hardware power states, energy performance preferences (EPP), and CPU governor policies
+across AC and battery power transitions on Aero Linux workstations.
+.SH OPTIONS
+.TP
+.BR \-s ", " \-\-status
+Display current hardware governor state, core frequencies, and battery health thresholds.
+.TP
+.B set IProfileR
+Switch to the specified power profile: powersave, balanced, or performance.
+.TP
+.BR \-h ", " \-\-help
+Display brief usage synopsis and available profile commands.
+.SH AUTHORS
+Written and engineered by Ronit Gupta (@ronitgupta138) for Aero Linux.
+.SH SEE ALSO
+.BR aero (1),
+.BR aero-telemetry (1)
