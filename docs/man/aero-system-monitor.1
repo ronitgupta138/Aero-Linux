@@ -1,0 +1,26 @@
+." Manual page for aero-system-monitor
+.TH AERO-SYSTEM-MONITOR 1 "November 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
+.SH NAME
+aero-system-monitor \- Hardware telemetry and developer process inspector
+.SH SYNOPSIS
+.B aero-system-monitor
+[B\-\-guiR] [B\-\-sortR IColumnR] [B\-\-helpR]
+.SH DESCRIPTION
+.B aero-system-monitor
+visualizes real-time per-core CPU utilization, zRAM compression metrics,
+NVMe read/write I/O operations, and container process trees on Aero Linux.
+.SH OPTIONS
+.TP
+.BR \-g ", " \-\-gui
+Launch interactive GTK3 graphical monitor.
+.TP
+.BR \-s ", " \-\-sort " " IColumnR
+Sort active processes by: cpu, mem, io, or pid (default: cpu).
+.TP
+.BR \-h ", " \-\-help
+Display brief usage synopsis.
+.SH AUTHORS
+Written and engineered by Ronit Gupta (@ronitgupta138) for Aero Linux.
+.SH SEE ALSO
+.BR aero (1),
+.BR aero-telemetry (1)
