@@ -1,0 +1,37 @@
+." Manual page for aero-telemetry
+.TH AERO-TELEMETRY 1 "November 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
+.SH NAME
+aero-telemetry \- High-frequency kernel and system performance telemetry daemon
+.SH SYNOPSIS
+.B aero-telemetry
+[B\-\-daemonR] [B\-\-intervalR IMSecR] [B\-\-exportR IFormatR] [B\-\-helpR]
+.SH DESCRIPTION
+.B aero-telemetry
+is a low-overhead system telemetry service engineered for the Aero Linux operating system.
+It aggregates hardware performance counters, CPU thermal metrics, eBPF probe statistics,
+and memory bus utilization into a compact binary circular ring buffer.
+.SH OPTIONS
+.TP
+.BR \-d ", " \-\-daemon
+Run the telemetry collector in the background as an unprivileged daemon.
+.TP
+.BR \-i ", " \-\-interval " " IMSecR
+Sampling frequency in milliseconds (default: 250ms).
+.TP
+.BR \-e ", " \-\-export " " IFormatR
+Output format for diagnostic dumps: json, prometheus, or binary (default: json).
+.TP
+.BR \-v ", " \-\-version
+Print telemetry service version information and exit.
+.TP
+.BR \-h ", " \-\-help
+Display brief usage synopsis and available options.
+.SH ENVIRONMENT
+.TP
+.B AERO_TELEMETRY_LOG
+Path to the operational event log (default: /var/log/aero/telemetry.log).
+.SH AUTHORS
+Written and engineered by Ronit Gupta (@ronitgupta138) for Aero Linux.
+.SH SEE ALSO
+.BR aero (1),
+.BR aero-profile (1)
