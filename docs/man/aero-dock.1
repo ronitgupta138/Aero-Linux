@@ -1,30 +1,27 @@
-.\" Manual page for aero-dock
-.TH AERO-DOCK 1 "October 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
+." Manual page for aero-dock
+.TH AERO-DOCK 1 "November 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
 .SH NAME
-aero-dock \- Application dock and panel configurator
+aero-dock \- High-performance desktop application dock and task manager
 .SH SYNOPSIS
 .B aero-dock
-[\fB\-\-gui\fR] [\fB\-\-help\fR] [\fB\-\-version\fR]
+[B\-\-positionR IPosR] [B\-\-autohideR] [B\-\-helpR]
 .SH DESCRIPTION
 .B aero-dock
-is a native desktop developer utility designed for the Aero Linux operating system.
-Configure desktop dock position, auto-hide behavior, icon sizing, and pinned applications.
+is a native GTK3 application dock engineered for the Aero Linux desktop environment.
+It provides hardware-accelerated icon animations, active window group indicators,
+and desktop workspace switcher shortcuts.
 .SH OPTIONS
 .TP
-.BR \-g ", " \-\-gui
-Launch the application in standalone GTK3 graphical mode (default).
+.BR \-p ", " \-\-position " " IPosR
+Set dock screen edge position: bottom, top, left, or right (default: bottom).
 .TP
-.BR \-v ", " \-\-version
-Print program version information and exit.
+.BR \-a ", " \-\-autohide
+Enable intelligent window overlap auto-hiding.
 .TP
 .BR \-h ", " \-\-help
-Display brief usage synopsis and available command-line switches.
-.SH ENVIRONMENT
-.TP
-.B AERO_DEBUG
-When set to 1, enables verbose diagnostic output to standard error.
+Display usage synopsis and exit.
 .SH AUTHORS
 Written and engineered by Ronit Gupta (@ronitgupta138) for Aero Linux.
 .SH SEE ALSO
 .BR aero (1),
-.BR aero-sysinfo (1)
+.BR aero-settings (1)
