@@ -1,0 +1,22 @@
+." Manual page for aero-screen-recorder
+.TH AERO-SCREEN-RECORDER 1 "November 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
+.SH NAME
+aero-screen-recorder \- Hardware-accelerated desktop screen recording utility
+.SH SYNOPSIS
+.B aero-screen-recorder
+[B\-\-outputR IFileR] [B\-\-framerateR IFPSR] [B\-\-hardwareR IEncoderR]
+.SH DESCRIPTION
+.B aero-screen-recorder
+captures Wayland and X11 desktop display streams utilizing VA-API and NVENC hardware video encoding pipelines.
+.SH OPTIONS
+.TP
+.BR \-o ", " \-\-output " " IFileR
+Destination video file path (default: ~/Videos/recordings/capture.mp4).
+.TP
+.BR \-f ", " \-\-framerate " " IFPSR
+Capture frame rate (default: 60).
+.TP
+.BR \-h ", " \-\-help
+Display brief usage synopsis.
+.SH AUTHORS
+Written and engineered by Ronit Gupta (@ronitgupta138) for Aero Linux.
