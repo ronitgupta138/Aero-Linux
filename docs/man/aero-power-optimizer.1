@@ -1,0 +1,22 @@
+." Manual page for aero-power-optimizer
+.TH AERO-POWER-OPTIMIZER 1 "November 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
+.SH NAME
+aero-power-optimizer \- Dynamic power management and battery threshold controller
+.SH SYNOPSIS
+.B aero-power-optimizer
+[B\-\-thresholdR IPercentR] [B\-\-statusR] [B\-\-helpR]
+.SH DESCRIPTION
+.B aero-power-optimizer
+configures battery health charge thresholds and adjusts CPU energy performance policies.
+.SH OPTIONS
+.TP
+.BR \-t ", " \-\-threshold " " IPercentR
+Set charging stop threshold percentage (default: 80).
+.TP
+.BR \-s ", " \-\-status
+Display current charge threshold and governor state.
+.TP
+.BR \-h ", " \-\-help
+Display usage synopsis.
+.SH AUTHORS
+Written and engineered by Ronit Gupta (@ronitgupta138) for Aero Linux.
