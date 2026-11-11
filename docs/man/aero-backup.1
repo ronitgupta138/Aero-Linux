@@ -1,30 +1,22 @@
-.\" Manual page for aero-backup
-.TH AERO-BACKUP 1 "October 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
+." Manual page for aero-backup
+.TH AERO-BACKUP 1 "November 2026" "Aero Linux v1.4.0" "Aero Linux Manual"
 .SH NAME
-aero-backup \- System snapshot and backup utility
+aero-backup \- Incremental Btrfs snapshot backup and remote synchronization tool
 .SH SYNOPSIS
 .B aero-backup
-[\fB\-\-gui\fR] [\fB\-\-help\fR] [\fB\-\-version\fR]
+[B\-\-sourceR IPathR] [B\-\-targetR IURIR] [B\-\-encryptR]
 .SH DESCRIPTION
 .B aero-backup
-is a native desktop developer utility designed for the Aero Linux operating system.
-Create, restore, and verify Timeshift btrfs/rsync snapshots and user archive backups.
+generates atomic Btrfs incremental streams using btrfs send and receive, transferring encrypted block deltas to local or remote storage targets.
 .SH OPTIONS
 .TP
-.BR \-g ", " \-\-gui
-Launch the application in standalone GTK3 graphical mode (default).
+.BR \-s ", " \-\-source " " IPathR
+Source Btrfs subvolume to snapshot.
 .TP
-.BR \-v ", " \-\-version
-Print program version information and exit.
+.BR \-t ", " \-\-target " " IURIR
+Target backup repository or SSH destination.
 .TP
 .BR \-h ", " \-\-help
-Display brief usage synopsis and available command-line switches.
-.SH ENVIRONMENT
-.TP
-.B AERO_DEBUG
-When set to 1, enables verbose diagnostic output to standard error.
+Display usage synopsis.
 .SH AUTHORS
 Written and engineered by Ronit Gupta (@ronitgupta138) for Aero Linux.
-.SH SEE ALSO
-.BR aero (1),
-.BR aero-sysinfo (1)
